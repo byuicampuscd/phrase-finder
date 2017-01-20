@@ -1,0 +1,7 @@
+Hello World!
+This is a verry fancy test which will be used in the process of testing my super fancy program!
+
+1234567890
+0987654321
+
+The number 1234 is not significant to the test other than it was thrown randomly into a string to test the regex capabilities.

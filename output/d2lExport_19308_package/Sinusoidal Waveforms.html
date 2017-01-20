@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+	<title>Sinusoidal Waveforms</title>
+	<link rel="stylesheet" href="../Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../Web%20Files/HTML/js/online.js"></script>
+</head>
+<body>
+<div id="main">
+<div id="header"><img alt="Course Banner" src="../Web%20Files/images/smallBanner.jpg" /></div>
+<div id="article">
+<p><img src="Course%20Images/CSEEheader.gif" alt="" title="" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="Course%20Images/AUS.jpg" alt="" title="" /></p>
+<table width="80%">
+<tbody>
+<tr>
+<td>
+<p><strong>ECEN 150 Laboratory Experiment: Sinusoidal Waveforms</strong><strong><br />&nbsp;</strong></p>
+<p><strong><span>Purpose:</span></strong></p>
+<p><strong>1.&nbsp;&nbsp;</strong>Learn how to make AC voltage measurements (both magnitude and frequency) with an oscilloscope<strong>.</strong></p>
+<p><strong>2</strong><strong>.</strong>&nbsp; Learn how to set the wave shape, magnitude, and frequency of a function generator.</p>
+<p><strong>3</strong><strong>.</strong>&nbsp; Learn how to make AC voltage measurements with a DMM.</p>
+<p><strong>4</strong><strong>.</strong>&nbsp; Become more familiar with reading instrument operating manuals.</p>
+<p>&nbsp;</p>
+<p><strong><span>Procedure:</span></strong></p>
+<p><span><strong>Note:&nbsp;&nbsp;</strong>These instructions are for the Tektronix TDS 2022 digital storage oscilloscope and Tektronix CFG 250 function generator that are used in the Austin Building.&nbsp; Other makes and models have similar&nbsp;</span><span>controls and menus, but the details may be slightly different than those shown.</span></p>
+<p><strong>1</strong><strong>.</strong>&nbsp; Turn on the oscilloscope (Figure 1) and get it ready for making measurements.</p>
+<span style="background-color:yellow"><strong>[<p><span>The User Manual for the Tektronix TDS 2000 series oscilloscope can be found at&nbsp;<a href="TDSUserManual.pdf" target="_blank">http://courses.byui.edu/ECEN150/RLO/LabInstruments/TDSUserManual.pdf</a>.&nbsp; Look at "Functional Check" on page 5 and "Taking Simple Measurements" on page 42.</span></p>]</span></strong> 
+<p><strong>Instructions for the TDS 2000 Series Oscilloscope:</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/BasicL2.gif" alt="TDS 2000 Series Oscilloscope" title="TDS 2000 Series Oscilloscope" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Figure 1: Digital Oscilloscope</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(1a)</strong>&nbsp;Power on the oscilloscope.&nbsp; Wait until the display shows that all power-on tests passed.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/BasicL3.jpg" alt="Default Setup" title="Default Setup" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(1b)</strong>&nbsp;Push the DEFAULT SETUP button.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="Course%20Images/Panel1.PNG" alt="Auto Set" title="Auto Set" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>&nbsp;(1c)</strong>&nbsp;The default attenuation setting for the oscilloscope is 10X.&nbsp; Set the switch on the oscilloscope probe (Figure 2) to 10X.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/ScopeProbe.jpg" alt="Oscilloscope Probe" title="Oscilloscope Probe" />&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Figure 2: Oscilloscope Probe</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp; (1d)</strong>&nbsp;Connect the probe to the oscilloscope&nbsp;&nbsp; Do this by aligning the slot in the BNC connector with the key on the CH 1 BNC of the oscilloscope.&nbsp; Push to connect, and twist to the right to lock the probe in place.&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(1e)</strong>&nbsp;Connect the probe tip to the 5V&nbsp;<em>PROBE COMP</em>&nbsp;connector and the ground clip (Figure 2) to the ground&nbsp;<em>PROBE COMP</em>&nbsp;connector on the oscilloscope.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/BasicL4.jpg" alt="Basic Probe comp" title="Basic Probe comp" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(1f)</strong>&nbsp;Push the&nbsp;<em>AUTOSET</em>&nbsp;button.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Autoset function obtains a stable waveform display for you.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It automatically adjusts the vertical scale, horizontal scale and trigger settings.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Autoset also displays several automatic measurements in the graticule area, depending on the signal type.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/Panel2.png" alt="Auto Set Panel" title="Auto Set Panel" /></p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Within a few seconds, you should see a square wave in the display of about 5 V peak-to-peak at 1 kHz.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/BasicL5.gif" alt="Panel Waves" title="Panel Waves" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The oscilloscope is functioning properly and is now ready to make a voltage measurement.</p>
+<p><strong>Additional Oscilloscope References:</strong></p>
+<span style="background-color:yellow"><strong>[<p>A short video clip that demonstrates how to use a digital oscilloscope with an LCD display can be seen at&nbsp;<a href="http://courses.byui.edu/ECEN150/RLO/LabInstruments/Oscilloscope.html">http://courses.byui.edu/ECEN150/RLO/LabInstruments/Oscilloscope.html</a>.&nbsp; Most digital oscilloscopes have similar controls and menus, but the details may be slightly different than those shown.</p>]</span></strong> 
+<span style="background-color:yellow"><strong>[<p>A short video clip that shows the same controls and menus as the TDS 2000 Series digital oscilloscopes&nbsp;<span>on the laboratory benches in the Austin Building can be seen at<a href="http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekDigitalScope.html">http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekDigitalScope.html</a>.&nbsp; (No audio.)</span></p>]</span></strong> 
+<span style="background-color:yellow"><strong>[<p>A short video clip that demonstrates how to use an analog oscilloscope with a CRT display can be seen&nbsp;<a href="http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekAnalogScope.html">http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekAnalogScope.html</a>.&nbsp; Most analog oscilloscopes have similar controls, but the layout may be slightly different than those shown.</p>]</span></strong> 
+<p><strong><span>2</span></strong><span><strong>.</strong>&nbsp; Turn on the function generator (Figure 3).</span></p>
+<span style="background-color:yellow"><strong>[<p><span>The User Manual for the Tektronix&nbsp;</span><span>CFG 250 Function Generator&nbsp;</span><span>can be found at&nbsp;<a href="CFGUserManual.pdf" target="_blank">http://courses.byui.edu/ECEN150/RLO/LabInstruments/CFGUserManual.pdf</a>.&nbsp; Look at "Operation" in Section 2.</span></p>]</span></strong> 
+<p><strong>Instructions for the CFG 250 Function Generator:</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/TektronixsCFG250.jpg" alt="Tektronixs Panel" title="Tektronixs Panel" /></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Figure 3: Function Generator</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2a)&nbsp;</strong><span>Power on the function generator by pushing the red button (#1 in Figure 3).&nbsp; The power indicator (#2) will illuminate.</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(2b)&nbsp;</strong>Adjust the following control knobs to the approximate center of their range:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amplitude (#6)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DC Offset (#10)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Duty Cycle (#9)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sweep Rate (#12)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sweep Width (#13)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(2c)&nbsp;</strong>Make sure the following buttons are NOT pushed in:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Volts Out (#7)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Invert (#8)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sweep (#11)</p>
+<ol start="3">
+<li><strong></strong>&nbsp;Configure the function generator to output a 400 Hz sine wave.</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(3a)</strong>&nbsp;Select the sine wave function (#3).</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>(3b)</strong>&nbsp;Set the frequency to 400 Hz by turning the frequency dial (#5) to 0.4 and pushing the 1 kHz Range button (#4).</p>
+<ol start="4">
+<li><strong></strong>&nbsp;&nbsp;Connect the BNC end of the function generator lead (Figure 4) to the output of the function generator (#14 in Figure 3).</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/Induct5.jpg" alt="Induct Cable" title="Induct Cable" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Figure 4: Function Generator Lead</strong></p>
+<ol start="5">
+<li><strong></strong>&nbsp; Connect the alligator clips of the function generator lead (Figure ) to an 8 ohm speaker.&nbsp; You will hear a tone.</li>
+</ol>
+<p><strong>6.&nbsp;</strong>&nbsp;Connect the oscilloscope probe tip to the same speaker connector as the signal (red) clip of the function generator clip, and connect the oscilloscope ground clip to the ground (black) clip of the function generator lead.</p>
+<p><strong>WARNING:</strong>&nbsp;<strong>&nbsp;It is very important to ALWAYS connect the oscilloscope ground clip to the function generator ground clip.&nbsp; Both of these ground clips are connected together through the power cords and building wiring.&nbsp; If they are not connected to the same point, a short circuit will result.</strong></p>
+<ol start="7">
+<li><span></span><span><strong>&nbsp;</strong></span>Push the&nbsp;<em>AUTOSET</em>&nbsp;button on the oscilloscope.</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The oscilloscope sets the vertical, horizontal, and trigger controls automatically.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you want to optimize the display of the waveform, you can manually adjust these controls.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The vertical size of the wave form is controlled with the VOLTS/DIV knob.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The horizontal size of the wave form is controlled with the SEC/DIV knob.</p>
+<ol start="8">
+<li><strong></strong>&nbsp;Adjust the amplitude knob on the function generator and notice the difference in speaker volume.&nbsp; Then use the oscilloscope to set the output voltage to about 2 Vpp.&nbsp; (The amplitude is not critical.&nbsp; If the volume of the tone is too loud, attenuate the amplitude as necessary to a comfortable level.&nbsp; Simply record the&nbsp;<em>actual</em>&nbsp;voltage.)</li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="Course%20Images/F0003TEK.jpg" alt="Sinusoidal Waveforms " title="Sinusoidal Waveforms " /></p>
+<ol start="9">
+<li><strong></strong>&nbsp; Adjust the frequency dial on the function generator to get an output frequency as close to 400 Hz as you can.&nbsp; Use the Tektronix "OpenChoice Desktop" software to record an image of the display or take a digital photo of the display for your lab report.</li>
+<li><strong></strong>&nbsp; Reduce the frequency of the signal to 60 Hz.&nbsp; The speaker will sound like a motor boat.&nbsp; You may need to adjust the SEC/DIV knob for a good display.&nbsp; (If you cannot hear anything, use a slightly higher frequency, such as 100 Hz.)</li>
+<li><strong></strong>&nbsp; Change the signal to a square wave.&nbsp; Why does the speaker sound different?&nbsp; Include your answer in your laboratory report.</li>
+<li><strong></strong>&nbsp; Change the signal to a triangle wave.&nbsp; Why does the speaker again sound different?&nbsp; Include you answer in your laboratory report.</li>
+<li><strong></strong>&nbsp; Increase the frequency of the triangle wave to 10 kHz.&nbsp; You may need to adjust the SEC/DIV knob for a good display.&nbsp; Use the Tektronix "OpenChoice Desktop" software to record an image of the display or take a digital photo of the display for your lab report.&nbsp; Why is it distorted?&nbsp; (Hint: A speaker is not a resistor -- the speaker coil is an inductor.)</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/F0002TEK.jpg" alt="Sinusoidal Waveforms" title="Sinusoidal Waveforms" /></p>
+<ol start="4">
+<li><strong></strong>&nbsp; Change the output back to a sine wave and increase its frequency to about 25 kHz.&nbsp; You may need to adjust the SEC/DIV knob for a good display.&nbsp; This is beyond the hearing range of nearly everyone.</li>
+<li><strong></strong>&nbsp; Slowly decrease the frequency until you can hear it.&nbsp; Adjust the volume as necessary.&nbsp; You may need to adjust the SEC/DIV knob for a good display.&nbsp; This is the upper thresh hold of your hearing range.&nbsp; Record this frequency.</li>
+<li><strong></strong>&nbsp; Continue decreasing the frequency until you can't here it anymore.&nbsp; Adjust the volume as necessary.&nbsp; You may need to adjust the SEC/DIV knob for a good display.&nbsp; This is the lower thresh hold of your hearing range.&nbsp; Record this frequency.</li>
+</ol>
+<p><strong>Discussion &amp; Conclusions:</strong></p>
+<p>What conclusions can you make? Start with the questions asked in the procedure and then answer these:</p>
+<p>How could you determine the voltage and frequency with an analog oscilloscope that does not directly display the the voltage and frequency as a number?&nbsp;</p>
+<p>Why did the sine wave, square wave, and triangle wave sound different through the speaker even though they were all the same frequency?&nbsp;</p>
+<p>Why is the triangle wave in step 13 distorted?&nbsp;</p>
+<p>The normal range of a young person's hearing is about 20 Hz to 20 kHz; how does your approximate hearing range on this simple test compare with the normal range?&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html><style>.rainbow {background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;background-clip: text;}</style>

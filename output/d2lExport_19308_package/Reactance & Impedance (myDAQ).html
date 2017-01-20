@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+	<title>Reactance & Impedance (myDAQ)</title>
+	<link rel="stylesheet" href="../Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../Web%20Files/HTML/js/online.js"></script>
+</head>
+<body>
+<div id="main">
+<div id="header"><img alt="Course Banner" src="../Web%20Files/images/smallBanner.jpg" /></div>
+<div id="article">
+<table width="80%">
+<tbody>
+<tr>
+<td>
+<p><strong>ECEN 150 Laboratory Experiment: Reactance &amp; Impedance (myDAQ)</strong><strong><br />&nbsp;</strong></p>
+<p><strong><span>Purpose:</span></strong></p>
+<p><strong>1.&nbsp;&nbsp;</strong>Practice calculating reactance and impedance.</p>
+<p><strong>2</strong><strong>.</strong>&nbsp; Observe the phase shift between voltage and current caused by reactance and impedance.</p>
+<p><strong>3</strong><strong>.</strong>&nbsp; Learn how to make AC voltage phase shift measurements with an oscilloscope.</p>
+<p><strong>4</strong><strong>.</strong>&nbsp; Become more familiar with laboratory instruments and reading instrument operating manuals.</p>
+<p>&nbsp;</p>
+<p><strong><span>Notes</span></strong><span><strong>:&nbsp;&nbsp;</strong>This version of the laboratory experiment is specifically for the myDAQ from National Instruments.&nbsp;</span></p>
+<p>Detailed instructions for using the myDAQ are in the myDAQ User Guide at&nbsp;<a href="NImyDAQ_UserGuide.pdf" target="_blank">http://<span style="background-color:yellow"><strong>[courses.byui.edu]</span></strong> /ECEN150/RLO/LabInstruments/NImyDAQ_UserGuide.pdf</a>.</p>
+<p>Setting up your myDAQ:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11431" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11431</a></p>
+<p>Using myDAQ instruments:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11420" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11420</a></p>
+<p>Using the myDAQ Function Generator:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11502" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11503</a>&nbsp;</p>
+<p>Using the myDAQ Oscilloscope:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11502" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11502</a>&nbsp;</p>
+<p>Each instrument also has a "Help" button in the lower right corner.</p>
+<p>&nbsp;</p>
+<p><strong><span>Procedure:</span></strong></p>
+<ol>
+<li><span></span><span><strong>&nbsp;&nbsp;</strong>Connect a 0.1 &mu;F capacitor and a 2.2 k&Omega; resistor to the myDAQ function generator (FGEN) and oscilloscope (SCOPE) as shown below.</span></li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/CKT.JPG" alt="yDAQ function generator and oscilloscope" title="yDAQ function generator and oscilloscope" /></p>
+<p><strong>Warning:</strong>&nbsp;<strong>&nbsp;</strong>It is very important to&nbsp;<em>ALWAYS</em>&nbsp;connect the oscilloscope ground lead to the function generator ground lead as you did here.&nbsp; On bench-top instruments, both of these ground leads are connected together through the power cords and building wiring.&nbsp; If they are not connected to the same point on your circuit, a short circuit will result.&nbsp; Tuck this information away for the future.&nbsp; It will save you much grief, and possibly even embarrassment!</p>
+<ol start="2">
+<li><span><strong></strong>&nbsp;&nbsp;</span><span>Calculate and record the reactance (</span><span>X<sub>C</sub></span><span>) of the 0.1 &mu;F capacitor when connected to a 100 Hz AC voltage.</span></li>
+<li><span><strong></strong>&nbsp; Calculate and record the total impedance (Z<sub>T</sub>) of the circuit.&nbsp; (Z<sub>T&nbsp;</sub>= R - j X<sub>C</sub>&nbsp;=&nbsp;</span>z<span>&nbsp;</span><span>&ang;</span><span>Ѳ</span><span>)</span></li>
+<li><span><strong></strong>&nbsp; Calculate and record the period (T) of the 100 Hz AC voltage.</span></li>
+</ol>
+<p><span><strong>5.&nbsp;</strong>&nbsp;Using&nbsp;</span><span>2 V<sub>PP&nbsp;</sub></span><span>(with a reference phase angle of 0<sup>o</sup>) as the total applied voltage&nbsp;</span><span>(</span>v<span><sub>T</sub>)&nbsp;</span><span>and using the total impedance (Z<sub>T</sub>) calculated in step # 3,&nbsp;calculate and record the magnitude and phase angle of the current in this circuit.</span></p>
+<p><span><strong>6.&nbsp;</strong>&nbsp;Calculate and record the magnitude and phase angle of the voltage&nbsp;</span><span>(</span>v<sub><span>R</span></sub><span>)&nbsp;</span><span>this current causes to drop across the 1&nbsp;</span><span>k&Omega;&nbsp;</span><span>resistor.&nbsp; (Remember,&nbsp;</span>i<sub>&nbsp;<span>R</span></sub><span>&nbsp;=&nbsp;</span>i<sub>&nbsp;<span>T</span></sub><span>&nbsp;in series circuits.</span></p>
+<p><span><strong>7.</strong> Convert the phase angle of this current (</span>i<sub>&nbsp;<span>T</span></sub><span>) from degrees to seconds&nbsp;</span>with the following unit conversion formula:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Phase Shift (in seconds) = (T / 360<sup>o</sup>) * (phase angle of&nbsp;i<sub>&nbsp;<span>T</span></sub><span>)</span></p>
+<p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>(The degrees cancel out and the result is in seconds.)</p>
+<p><strong>8.&nbsp;</strong>&nbsp;Record the&nbsp;<em>calculated</em>&nbsp;phase shift (in seconds).</p>
+<p><span><strong>9.</strong> Adjust&nbsp;</span><span>the function generator for a 100 Hz sine wave output voltage (</span>v<span><sub>T</sub>) of 2 V<sub>PP.&nbsp;</sub>&nbsp;</span></p>
+<p><span><img src="Course%20Images/FGEN1.JPG" alt="Function Generator Lab View" title="Function Generator Lab View" /></span></p>
+<p><strong>11.</strong> &nbsp;Display this voltage on CH 0 of the oscilloscope.</p>
+<p><img src="Course%20Images/Scope1.JPG" alt="Oscilloscope #1 " title="Oscilloscope #1 " /></p>
+<p><strong>10.&nbsp;</strong>&nbsp;Display the voltage across the resistor on channel 1 of the oscilloscope and superimpose it on the total voltage shown on channel 1.&nbsp; Increase the display size of the much smaller voltage on channel 1 by adjusting the VOLTS/DIV knob.</p>
+<p><img src="Course%20Images/Scope2.JPG" alt="oscilloscope # 2" title="oscilloscope # 2" /></p>
+<p></p>
+<p><strong>11</strong>. &nbsp;You should be able to see the phase angle (phase shift) between the two voltages. Stretch out the horizontal size of the waveforms with the SEC/DIV knob to make measuring the phase angle easier.</p>
+<p><img src="Course%20Images/Scope3.JPG" alt="Oscilloscope #3" title="Oscilloscope #3" /></p>
+<p><strong>12</strong>. Turn the cursors on and set the C1 cursor over the voltage on channel 0 (green) where it crosses the horizontal graticule.</p>
+<p><span><strong>13</strong>. &nbsp;</span>Place the C2 cursor over the voltage on channel 1 (blue) where it crosses the horizontal graticule.</p>
+<p><img src="Course%20Images/Scope4.JPG" alt="Oscilloscope #4" title="Oscilloscope #4" /></p>
+<p><strong>14</strong>. Record the measured number of seconds (&Delta;t) between the two cursors.&nbsp; This is displayed as the value of dT.&nbsp; Compare this with the phase shift you calculated in step 7.</p>
+<p><strong>15</strong>. &nbsp;Capture an image of the display for your lab report.</p>
+<p><strong>16.&nbsp;</strong>&nbsp;Convert the time (&Delta;t) recorded in step # 14 to degrees with the following unit conversion formula:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phase Angle (in degrees) = (&Delta;t / T) * (360<sup>o</sup>)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (The seconds cancel out and the result is in degrees.)</p>
+<p><strong>17</strong>. &nbsp; Record the&nbsp;<em>measured&nbsp;</em>phase shift (in degrees) between the displayed voltages, which is the actual phase shift of the current (i<sub>&nbsp;<span>T</span></sub><span>)</span>.&nbsp; Compare this with the phase angle you calculated in steps 5 and 6.</p>
+<p>&nbsp;</p>
+<p><strong><span>Discussion &amp; Conclusions:</span></strong></p>
+<p><span>What conclusions can you make? Start with these:&nbsp;</span></p>
+<p>Why is the voltage across the resistor so much smaller than the applied voltage?&nbsp;</p>
+<p>Why is it necessary to include a phase angle with the magnitude of voltage, current, and impedance in AC circuits?&nbsp;</p>
+<p>How are the phase angles of the voltage, current, and impedance related?&nbsp;&nbsp;</p>
+<p>We determined the actual phase shift of the current in this circuit by measuring the phase shift of the voltage across the resistor; why is the voltage across the resistor in phase with the total current, but out of phase with the total applied voltage?&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html><style>.rainbow {background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;background-clip: text;}</style>

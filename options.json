@@ -1,0 +1,21 @@
+{
+    "phrases": [
+        {
+            "phrase": "((<.+=(\"|'|`))(.*courses\\.byui\\.edu.*(\"|'|`)).+>)|(courses\\.byui\\.edu)",
+            "regex": true,
+            "flag": "gi",
+            "color":"yellow"
+        },{
+            "phrase": "((<.+=(\"|'|`))(.*stream\\.byui\\.edu.*(\"|'|`)).+>)|(stream\\.byui\\.edu)",
+            "regex": true,
+            "flag": "gi",
+            "color":"yellow"
+        },{
+            "phrase": "((<.+=(\"|'|`))(.*brightcove.*(\"|'|`)).+>)|(brightcove)",
+            "regex": true,
+            "flag": "gi",
+            "color":"yellow"
+        }
+        
+    ]
+}

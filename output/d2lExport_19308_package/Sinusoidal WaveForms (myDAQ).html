@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+	<title>Sinusoidal WaveForms (myDAQ)</title>
+	<link rel="stylesheet" href="../Web%20Files/css/styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="../Web%20Files/HTML/js/online.js"></script>
+</head>
+<body>
+<div id="main">
+<div id="header"><img alt="Course Banner" src="../Web%20Files/images/smallBanner.jpg" /></div>
+<div id="article">
+<p><img src="CSEEheader.gif" alt="" title="" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="Course%20Images/AUS.jpg" alt="" title="" /></p>
+<table width="80%">
+<tbody>
+<tr>
+<td>
+<p style="text-align: center;"><strong>ECEN 150 Laboratory Experiment: Sinusoidal Waveforms (myDAQ)</strong><strong><br />&nbsp;</strong></p>
+<p><strong><span>Purpose:</span></strong></p>
+<p><strong>1.&nbsp;&nbsp;</strong>Learn how to make AC voltage measurements (both magnitude and frequency) with an oscilloscope<strong>.</strong></p>
+<p><strong>2</strong><strong>.</strong>&nbsp; Learn how to set the wave shape, magnitude, and frequency of a function generator.</p>
+<p><strong>3</strong><strong>.</strong>&nbsp; Learn how to make AC voltage measurements with a DMM.</p>
+<p><strong>4</strong><strong>.</strong>&nbsp; Become more familiar with reading instrument operating manuals.</p>
+<p>&nbsp;</p>
+<p><strong><span>Note</span></strong><span><strong>s:&nbsp;&nbsp;</strong>This version of the laboratory experiment is specifically for the myDAQ from National Instruments.&nbsp;</span></p>
+<p>Detailed instructions for using the myDAQ are in the <a href="NImyDAQ_UserGuide.pdf" target="_blank">myDAQ User Guide</a>.</p>
+<p>Setting up your myDAQ:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11431" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11431</a></p>
+<p>Using myDAQ instruments:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11420" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11420</a></p>
+<p>U<span>sing the myDAQ Function Generator:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11502" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11503</a>&nbsp;</span></p>
+<p>Using the myDAQ Oscilloscope:&nbsp;<a href="http://zone.ni.com/devzone/cda/tut/p/id/11502" target="_blank">http://zone.ni.com/devzone/cda/tut/p/id/11502</a>&nbsp;</p>
+<p>Each instrument also has a "Help" button in the lower right corner.</p>
+<p><span>You should also watch the oscilloscope video clips, below, because they show how to operate the type of oscilloscope you will use most often on the job.</span></p>
+<span style="background-color:yellow"><strong>[<p><span>A short video clip that demonstrates how to use a digital oscilloscope with an LCD display can be seen at&nbsp;<a href="http://courses.byui.edu/ECEN150/RLO/LabInstruments/Oscilloscope.html">http://courses.byui.edu/ECEN150/RLO/LabInstruments/Oscilloscope.html</a>.&nbsp; Most digital oscilloscopes have similar controls and menus, but the details may be slightly different than those shown.</span></p>]</span></strong> 
+<span style="background-color:yellow"><strong>[<p><span>A short video clip that demonstrates how to use an analog oscilloscope with a CRT display can be seen&nbsp;<a href="http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekAnalogScope.html">http://courses.byui.edu/ECEN150/RLO/LabInstruments/TekAnalogScope.html</a>.&nbsp; Most analog oscilloscopes have similar controls, but the layout may be slightly different than those shown.</span></p>]</span></strong> 
+<p>Compare the controls of the myDAQ function generator with a typical bench-top function generator show below.&nbsp; Do you see the same adjustments (Frequency, Amplitude, DC Offset, Wave Shape, Sweep, etc.) on both?</p>
+<p><img src="Course%20Images/FGEN.JPG" alt="Function Generator" title="Function Generator" /></p>
+<p><img src="Course%20Images/CFG%20250.jpg" alt="CFG 250" title="CFG 250" /><br />Compare the controls of the myDAQ oscilloscope with a typical bench-top oscilloscope.&nbsp; Can you find some of the same adjustments (VOLTS/DIV, TIME/DIV or SEC/DIV, Position, Trigger, etc.) on both?</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Course%20Images/Scope.jpg" alt="Scope, Labview" title="Scope, Labview" /></p>
+<p><img src="Course%20Images/Tektronix-TPS2012-Oscilloscope.jpg" alt="TPS 2012 " title="TPS 2012 " /></p>
+<p>Digital Oscilloscope</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="Course%20Images/Tektronix-2213A-60MHZ-oscilloscope.jpg" alt="Oscilloscope 60 MHZ" title="Oscilloscope 60 MHZ" /></p>
+<p>Analog Oscilloscope</p>
+<p>&nbsp;</p>
+<p><strong><span>Procedure:</span></strong></p>
+<p><strong><span>1</span></strong><span><strong>.</strong>&nbsp; Turn on, and configure, the myDAQ function generator (FGEN).</span></p>
+<p><span>The myDAQ f</span>unction generator produces standard sine, triangle, and square waves.<span>&nbsp;</span></p>
+<p>Click on the button that looks like a sine wave.</p>
+<p>Set the Frequency to 300 Hz.</p>
+<p>Set the Amplitude to 1 Vpp.</p>
+<p>Set the DC offset to zero.</p>
+<p>Ignore the other settings for now.</p>
+<p><img src="Course%20Images/FGEN1.JPG" alt="Function Generator Settings" title="Function Generator Settings" /></p>
+<p><span>The output signal is terminal&nbsp;</span>AO 0 on<span>&nbsp;the&nbsp;</span>protoboard.&nbsp; The AGND terminal is its ground reference.</p>
+<p>Click on "Run."</p>
+<ol start="2">
+<li><strong></strong>&nbsp; Turn on, and configure, the myDAQ oscilloscope (Scope).&nbsp;</li>
+</ol>
+<p><span>The myDAQ o</span>scilloscope can display voltage measurements from two input channels simultaneously.&nbsp;</p>
+<p>Set the Source of channel 0 to AI 0.</p>
+<p>Select the "Enabled" box for channel 0.</p>
+<p>Set the Volts/Div scale to 1 V.</p>
+<p>Set the Vertical Position to zero.</p>
+<p>Set the Time/Div scale to 1 ms.</p>
+<p>Set the Trigger Type to "Edge."</p>
+<p>Set the Trigger Source to "Chan 0 Source."</p>
+<p>Set the Trigger Level to zero.</p>
+<p>Set the Acquisition Mode to "Run Continuously."</p>
+<p>Channel 0 uses the input terminal AI 0 on the protoboard or the left channel of the 3.5mm Audio Input jack on<span>&nbsp;the&nbsp;</span>side of<span>&nbsp;the&nbsp;</span>myDAQ.&nbsp; Channel 1 uses the input terminal AI 1 on the protoboard or the right channel of the Audio Input jack.&nbsp; You will only use Channel 0 (input AI 0) during this experiment.&nbsp;&nbsp;&nbsp;</p>
+<p>Connect the AI 0 + oscilloscope (signal) input on the myDAQ protoboard to the AO 0 output of the function generator and the AI 0 - (ground) input to AGND.&nbsp;</p>
+<p><span><strong>Warning:</strong>&nbsp;<strong>&nbsp;</strong>It is very important to&nbsp;<em>ALWAYS</em>&nbsp;connect the oscilloscope ground lead to the function generator ground lead as you did here.&nbsp; On bench-top instruments, both of these ground leads are connected together through the power cords and building wiring.&nbsp; If they are not connected to the same point on your circuit, a short circuit will result.&nbsp; Tuck this information away for the future.&nbsp; It will save you much grief, and possibly even embarrassment!</span></p>
+<p>Click on "Run."</p>
+<p><img src="Course%20Images/FGEN1.JPG" alt="Click run, Scope" title="Click run, Scope" /></p>
+<p>A green sine wave, representing the measured voltage, will appear across the screen.&nbsp;</p>
+<ol start="3">
+<li><strong></strong>&nbsp; Record the voltage measurements (Vp, Vpp, Vrms, frequency, and period).</li>
+</ol>
+<p>Read the peak voltage as the number of divisions multiplied by the number of volts per division.&nbsp; (In this case, it is 0.5 divisions * 1 V per division = 0.5 Vp.&nbsp; If you adjusted your speaker volume to a different level, your voltage measurement will be different.)</p>
+<p>Select the "CH 0" box under "Display Measurements" to show the RMS (DC equivalent) voltage, the frequency, and the peak-to-peak voltage under the oscilloscope display.&nbsp; (In this case,&nbsp; 0.5 Vp = 1 Vpp = 0.35 Vrms, and the frequency is very close to 300 Hz).&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>Read the period as the number of divisions multiplied by the time per division.&nbsp; For the display shown here, there are 3.3 divisions per period.&nbsp; Multiply that 3.3 divisions by the setting of 1 ms per division, and the result is 3.3 ms for the period.&nbsp;&nbsp; Frequency is the reciprocal of the period.&nbsp; The reciprocal of 3.3 ms is 303 Hz.</p>
+<p><strong>4.&nbsp;&nbsp;</strong>Listen to the tone.</p>
+<p>Connect an 8 ohm speaker.&nbsp; (One terminal of a speaker goes to AO 0 and the other terminal goes to AGND.)&nbsp;&nbsp;</p>
+<p>You will be able to hear the 300 Hz tone, but the oscilloscope will not work with the speaker connected.</p>
+<ol start="5">
+<li><strong></strong>&nbsp; Adjust the frequency dial on the function generator to get an output frequency of 60 Hz.&nbsp; The speaker will sound like a motor boat.&nbsp; (If you cannot hear anything, use a slightly higher frequency, such as 100 Hz.)&nbsp;</li>
+<li><strong></strong>&nbsp; Measure and record the new frequency and period.</li>
+</ol>
+<p>Disconnect the speaker to make these measurements.&nbsp; You may need to adjust the Time/Div setting on the oscilloscope for a good display.&nbsp;</p>
+<ol start="7">
+<li><strong></strong>&nbsp; Reconnect the speaker and increase the frequency 20 kHz.&nbsp; This is the maximum frequency of the myDAQ function generator and just beyond the hearing range of most people.</li>
+<li><strong></strong>&nbsp; Measure and record the new frequency and period.</li>
+</ol>
+<p>Disconnect the speaker to make these measurements.&nbsp; You may need to adjust the Time/Div setting on the oscilloscope for a good display.&nbsp;</p>
+<ol start="9">
+<li><strong></strong>&nbsp; Reconnect the speaker and slowly decrease the frequency until you can hear it.&nbsp; If you have a reasonably good speaker, this is the upper thresh hold of your hearing range.&nbsp; Otherwise, it is simply the upper thresh hold of your speaker's response!&nbsp;</li>
+<li><strong></strong>&nbsp; Measure and record the new frequency and period.</li>
+</ol>
+<p>Disconnect the speaker to make these measurements.&nbsp; You may need to adjust the Time/Div setting on the oscilloscope for a good display.&nbsp;</p>
+<ol>
+<li><strong></strong>&nbsp; Reconnect the speaker and continue decreasing the frequency until you can't here it anymore.&nbsp; This is the lower thresh hold of your hearing range.&nbsp;</li>
+<li><strong></strong>&nbsp; Measure and record the new frequency and period.</li>
+</ol>
+<p>Disconnect the speaker to make these measurements.&nbsp; You may need to adjust the Time/Div setting on the oscilloscope for a good display.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Discussion &amp; Conclusions:</strong></p>
+<p>What conclusions can you make? Start with the questions asked in the procedure and then answer these:</p>
+<p>How could you determine the voltage and frequency with an analog oscilloscope that does not directly display the the voltage and frequency as a number?&nbsp;</p>
+<p>The normal range of a young person's hearing is about 20 Hz to 20 kHz; how does your approximate hearing range on this simple test compare with the normal range?&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html><style>.rainbow {background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );color:transparent;-webkit-background-clip: text;background-clip: text;}</style>
