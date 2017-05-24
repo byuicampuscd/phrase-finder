@@ -1,0 +1,11 @@
+{
+  "name": "phrase-finder",
+  "version": "1.0.0",
+  "description": "No description",
+  "main": "",
+  "scripts": {
+    "test": "NA"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}
