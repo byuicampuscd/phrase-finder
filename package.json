@@ -2,7 +2,7 @@
   "name": "phrase-finder",
   "version": "1.0.0",
   "description": "No description",
-  "main": "",
+  "main": "main.js",
   "scripts": {
     "test": "NA"
   },
